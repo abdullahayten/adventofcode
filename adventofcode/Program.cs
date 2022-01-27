@@ -1,4 +1,4 @@
-﻿using adventofcode._2015;
+﻿using adventofcode._2015.Day2;
 using System;
 
 namespace adventofcode
@@ -6,9 +6,9 @@ namespace adventofcode
     class Program
     {
         static void Main(string[] args)
-        {
-            Day1 d1 = new Day1();
-            d1.ShowResult();
+        { 
+            Day2 d2 = new Day2();
+            d2.ShowResult();
 
             Console.ReadKey();
         }
