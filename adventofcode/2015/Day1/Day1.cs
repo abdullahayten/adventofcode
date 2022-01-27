@@ -8,7 +8,7 @@ namespace adventofcode._2015
         int floor = 0; 
         string input = File.ReadAllText(@"../../../2015/Day1/Day1Input.txt");
 
-        public int GetFloor()
+        private int GetFloor()
         {
             floor = 0;
             foreach (char c in input)
@@ -18,11 +18,10 @@ namespace adventofcode._2015
                 else
                     floor--;
             }
-
             return floor;
         }
 
-        public int FindPositionIndex()
+        private int FindPositionIndex()
         {
             floor = 0;
             for(int i = 0; i < input.ToCharArray().Length; i++)
@@ -39,8 +38,8 @@ namespace adventofcode._2015
 
         public void ShowResult()
         {
-            Console.WriteLine(GetFloor());
-            Console.WriteLine(FindPositionIndex());
+            Console.WriteLine("P1: " + GetFloor());
+            Console.WriteLine("P2: " + FindPositionIndex());
         }
     }
 }

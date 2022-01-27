@@ -8,7 +8,7 @@ namespace adventofcode._2015.Day2
     {
         int total = 0;
         string input = File.ReadAllText(@"../../../2015/Day2/Day2Input.txt");
-        public int GetTotalSquare()
+        private int GetTotalSquare()
         {
             total = 0;
             foreach (string s in input.Split("\r\n"))
@@ -22,7 +22,7 @@ namespace adventofcode._2015.Day2
             return total;
         }
 
-        public int GetTotalRibbon()
+        private int GetTotalRibbon()
         {
             total = 0;
             foreach (string s in input.Split("\r\n"))
@@ -37,8 +37,8 @@ namespace adventofcode._2015.Day2
 
         public void ShowResult()
         {
-            Console.WriteLine(GetTotalSquare());
-            Console.WriteLine(GetTotalRibbon());
+            Console.WriteLine("P1: " + GetTotalSquare());
+            Console.WriteLine("P2: " + GetTotalRibbon());
         }
     }
 }
