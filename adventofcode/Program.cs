@@ -1,4 +1,4 @@
-﻿using adventofcode._2015.Day4;
+﻿using adventofcode._2015.Day5;
 using System;
 
 namespace adventofcode
@@ -7,7 +7,7 @@ namespace adventofcode
     {
         static void Main(string[] args)
         {
-            Day4 d = new Day4();
+            Day5 d = new Day5();
             d.ShowResult();
 
             Console.ReadKey();

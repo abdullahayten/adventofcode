@@ -29,7 +29,7 @@ namespace adventofcode._2015.Day4
         public void ShowResult()
         {
             Console.WriteLine("P1: " + GetLowestPositiveNumber(5, "00000"));
-            Console.WriteLine("P1: " + GetLowestPositiveNumber(6, "000000"));
+            Console.WriteLine("P2: " + GetLowestPositiveNumber(6, "000000"));
         }
     }
 }
